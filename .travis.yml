@@ -1,0 +1,10 @@
+sudo: required
+services:
+    - docker
+
+install:
+    - docker login --email=$DOCKER_HUB_EMAIL --username=$DOCKER_HUB_USERNAME --password=$DOCKER_HUB_PASSWORD
+
+script:
+    - docker build -t kevinjcash/servicea .
+    - docker push kevinjcash/servicea
