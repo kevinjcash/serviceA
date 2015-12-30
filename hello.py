@@ -1,4 +1,3 @@
-import boto
 from flask import Flask
 import requests
 
