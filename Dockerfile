@@ -14,4 +14,4 @@ RUN mkdir /opt/app
 
 ADD hello.py /opt/app/hello.py
 
-CMD ["/usr/bin/python", "/opt/app/hello.py", "$b_instance"]
+CMD /usr/bin/python /opt/app/hello.py $b_instance
